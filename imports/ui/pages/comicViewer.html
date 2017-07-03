@@ -1,0 +1,10 @@
+<template name='comicViewer'>
+	<div class="row">
+		<div class="col-sm-12">
+			{{#each pages}}
+				<img src="{{this.url}}" class="img-responsive">
+				<br>
+			{{/each}}
+		</div>
+	</div>
+</template>
