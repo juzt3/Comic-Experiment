@@ -29,7 +29,6 @@ Schemas.Issues = new SimpleSchema({
 		type: String,
 		label: "Nombre del Libro",
 		max: 30,
-		optional: true,
 		autoform: {
 			placeholder: "Ej: Marvel Zombies #1",
 		}
@@ -55,7 +54,6 @@ Schemas.Comics = new SimpleSchema({
 		type: String,
 		label: "Nombre del Comic",
 		max: 30,
-		optional: true,
 		autoform: {
 			placeholder: "Ej: Marvel Zombies"
 		}
@@ -73,6 +71,7 @@ Schemas.Comics = new SimpleSchema({
 	issues: {
 		type: [Schemas.Issues],
 		label: "Libros",
+		optional: true,
 	}
 });
 
