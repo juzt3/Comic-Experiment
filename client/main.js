@@ -13,7 +13,8 @@ SimpleSchema.setDefaultMessages({
 	}
 });
 
-//$.material.init()
+//Para cuando quiera usarse Materialize en vez de Boostrap
+AutoForm.setDefaultTemplate('materialize');
 
 import './main.html';
 

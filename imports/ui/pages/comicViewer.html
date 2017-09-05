@@ -1,8 +1,8 @@
 <template name='comicViewer'>
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col s12">
 			{{#each pages}}
-				<img src="{{this.link}}" class="img-responsive">
+				<img src="{{fileURL this}}" class="responsive-img">
 				<br>
 			{{/each}}
 		</div>
