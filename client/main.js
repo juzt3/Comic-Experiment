@@ -21,6 +21,9 @@ import './main.html';
 //Collections
 import '/imports/collections';
 
+//Components
+import '/imports/ui/components';
+
 //Pages
 import '/imports/ui/pages';
 

@@ -62,9 +62,6 @@ ComicPages = new FilesCollection({
   }
 });
 
-//Very Important line
-global[ComicPages.collectionName] = ComicPages;
-
 if (Meteor.isServer) {
   ComicPages.denyClient();
 }
