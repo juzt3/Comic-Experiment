@@ -2,6 +2,9 @@ import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import SimpleSchema from 'simpl-schema';
+import materialize from 'materialize-css';
+import 'materialize-css/sass/materialize.scss';
+
 SimpleSchema.extendOptions(['autoform']);
 
 SimpleSchema.setDefaultMessages({
@@ -12,6 +15,12 @@ SimpleSchema.setDefaultMessages({
 		},
 	}
 });
+
+/*
+Meteor.startup(function(){
+	T9n.setLanguage('es');
+});
+*/
 
 //Para cuando quiera usarse Materialize en vez de Boostrap
 AutoForm.setDefaultTemplate('materialize');
@@ -27,9 +36,9 @@ import '/imports/ui/components';
 //Pages
 import '/imports/ui/pages';
 
-/*
-Meteor.startup(function(){
-	//Cambio de lenguage de la UI
-	TAPi18n.setLanguage("es");
+UI.registerHelper('stringTrimm', function(stringToShorten, maxCharsAmount){
+	if(stringToShorten.length > maxCharsAmount){
+		return stringToShorten.substring(0, maxCharsAmount) + '...';
+	}
+	return stringToShorten;
 });
-*/

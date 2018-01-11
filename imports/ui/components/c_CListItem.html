@@ -1,0 +1,7 @@
+<template name="c_CListItem">
+	<li class="collection-item avatar">
+		<a href="/comic/{{h_ComicId}}/issue/{{this.index}}"><img src="{{h_IssueCover.link}}" alt="" class="minicover" style="position: absolute; width: 54px; height: auto; display: inline-block; left: 1px; top: 1px;"></a>
+		<span class="title"><a href="/comic/{{h_ComicId}}/issue/{{this.index}}">{{this.issue.name}}</a></span>
+		<a href="/comic/{{h_ComicId}}/issue/{{this.index}}" class="secondary-content"><i class="material-icons">send</i></a>
+	</li>
+</template>

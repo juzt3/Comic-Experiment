@@ -1,8 +1,9 @@
 Template.comicViewer.helpers({
 	comic: function(){
-		return Comics.findOne();
+		id = FlowRouter.getParam("comicId");
+		return Comics.findOne(id);
 	},
 	pages: function(){
-		return Template.comicViewer.__helpers.get('comic').call() && ComicPages.find({_id: {$in: Template.comicViewer.__helpers.get('comic').call().issues[0].pages}});
+		return Template.comicViewer.__helpers.get('comic').call() && ComicPages.find({_id: {$in: Template.comicViewer.__helpers.get('comic').call().issues[FlowRouter.getParam("number")].pages}});
 	}
 });
