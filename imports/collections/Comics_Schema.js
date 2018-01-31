@@ -126,6 +126,9 @@ Schemas.Comics = new SimpleSchema({
 		type: Array,
 		label: "Libros",
 		optional: true,
+		autoform: {
+			type: "hidden"
+		}
 	},
 	"issues.$": {
 		type: Schemas.Issues
