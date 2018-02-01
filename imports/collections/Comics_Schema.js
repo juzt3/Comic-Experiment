@@ -136,3 +136,18 @@ Schemas.Comics = new SimpleSchema({
 }, { tracker: Tracker });
 
 Comics.attachSchema(Schemas.Comics);
+
+if(Meteor.isClient){
+	var hooksObject = {
+		onSuccess: function(){
+			FlowRouter.go('/comic/'+this.docId);
+			//Bert.alert('Negocio agregado con exito', 'success', 'growl-top-right');
+
+		},
+		onError: function(error){
+			//Bert.alert('Ha ocurrido un error: '+error.reason, 'danger', 'growl-top-right');
+		}
+	};
+
+	AutoForm.addHooks('insertComic', hooksObject);
+}
