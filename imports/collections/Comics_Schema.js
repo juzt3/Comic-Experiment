@@ -122,6 +122,15 @@ Schemas.Comics = new SimpleSchema({
     			}
 		}
 	},
+	uploaderId: {
+		type: String,
+		autoValue: function() {
+			return Meteor.userId();
+		},
+		autoform: {
+			type: "hidden",
+		}
+	},
 	issues: {
 		type: Array,
 		label: "Libros",
