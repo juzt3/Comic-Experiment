@@ -48,6 +48,7 @@ mozfet:autoform-materialize
 #Router 
 kadira:flow-router 
 kadira:blaze-layout 
+zimme:active-route
  
 #Dev 
 meteortoys:allthings

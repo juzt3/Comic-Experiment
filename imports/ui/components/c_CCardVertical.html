@@ -1,14 +1,11 @@
 <template name="c_CCardVertical">
-	<div class="col s12 m4 l3 xl3">
+	<div class="col s6 m4 l3 xl2">
 		<div class="card">
 			<div class="card-image waves-effect waves-block waves-light">
 				<a href="/comic/{{this._id}}"><img src="{{h_ComicCover.link}}"></a>
 			</div>
 			<div class="card-content">
-				<span class="card-title activator grey-text text-darken-4">{{this.name}}<i class="material-icons right">more_vert</i></span>
-			</div>
-			<div class="card-action">
-				<a class="waves-effect waves-light btn" href="/comic/{{this._id}}">Leer</a>
+				<span class="activator grey-text text-darken-4">{{this.name}}</span>
 			</div>
 			<div class="card-reveal">
 			    <span class="card-title grey-text text-darken-4">{{this.name}}<i class="material-icons right">close</i></span>

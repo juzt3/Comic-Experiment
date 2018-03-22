@@ -1,0 +1,8 @@
+<template name="c_librarySideNav">
+	<div class="col s12 m2">
+		<div class="collection" style="margin: 0;">
+			<a href="/library" class="collection-item {{#if isActiveRoute 'library'}}active{{/if}}"><i class="material-icons left">bookmark</i>Leyendo</a>
+			<a href="/myuploads" class="collection-item {{#if isActiveRoute 'myuploads'}}active{{/if}}"><i class="material-icons left">cloud_upload</i>Mis Subidas</a>
+		</div>
+	</div>
+</template>

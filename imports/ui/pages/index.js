@@ -6,3 +6,6 @@ import '/imports/ui/pages/comicDetails.js';
 import '/imports/ui/pages/insertIssue.html';
 import '/imports/ui/pages/insertIssue.js';
 import '/imports/ui/pages/homePage.html';
+import '/imports/ui/pages/libraryPage.html';
+import '/imports/ui/pages/myUploadsPage.html';
+import '/imports/ui/pages/myUploadsPage.js';

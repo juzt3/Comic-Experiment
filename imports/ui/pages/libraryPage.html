@@ -1,0 +1,12 @@
+<template name="libraryPage">
+	<div id="contenedor">
+		<div class="row">
+			{{> c_librarySideNav}}
+			<div class="col s12 m10">
+				{{#each h_Comics}}
+					{{> c_CCardVertical}}
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</template>

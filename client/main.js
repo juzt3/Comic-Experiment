@@ -42,3 +42,7 @@ UI.registerHelper('stringTrimm', function(stringToShorten, maxCharsAmount){
 	}
 	return stringToShorten;
 });
+
+UI.registerHelper('equals', function (a, b) {
+	return a === b;
+});
